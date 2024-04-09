@@ -18,6 +18,7 @@ def home():
     cur.execute("SELECT * FROM Pokemon")
     pokemon = cur.fetchall()
     cur.close()
+    print(pokemon)
     return render_template('index.html', pokemon=pokemon)
 
 if __name__ == '__main__':

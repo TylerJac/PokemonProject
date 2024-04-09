@@ -18,8 +18,15 @@ def home():
     cur.execute("SELECT * FROM Pokemon")
     pokemon = cur.fetchall()
     cur.close()
-    print(pokemon)
     return render_template('index.html', pokemon=pokemon)
+
+@app.route('/typings_list')
+def typings_list():
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT * FROM Typings")
+    typings = cur.fetchall()
+    cur.close()
+    return render_template('typings_list.html', typings=typings)
 
 if __name__ == '__main__':
     app.run(debug=True)

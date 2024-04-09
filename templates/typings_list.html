@@ -21,30 +21,30 @@
 </head>
 
 <body>
-    <h1>Pokemon Data</h1>
+    <h1>Typing Data</h1>
     <table>
         <thead>
             <tr>
-                <th>National Pokedex #</th>
-                <th>Pokemon</th>
-                <th>Typing</th>
-                <th>Abilities</th>
-                <th>Base Stat Total (BST)</th>
+                <th>Type 1</th>
+                <th>Type 2</th>
+                <th>Weaknesses</th>
+                <th>Super Effective</th>
+                <th>Invulnerable</th>
             </tr>
         </thead>
         <tbody>
-            {% for pokemon in pokemon %}
+            {% for typing in typings %}
             <tr>
-                <td>{{ pokemon[0] }}</td>
-                <td>{{ pokemon[1] }}</td>
-                <td>{{ pokemon[2] }}</td>
-                <td>{{ pokemon[3] }}</td>
-                <td>{{ pokemon[4] }}</td>
+                <td>{{ typing[1] }}</td>
+                <td>{{ typing[2] }}</td>
+                <td>{{ typing[3] }}</td>
+                <td>{{ typing[4] }}</td>
+                <td>{{ typing[5] }}</td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
-    <a class="btn btn-primary" href="/typings_list">View Typings</a>
+    <a class="btn btn-primary" href="/">View Pokemon</a>
 </body>
 
 </html>

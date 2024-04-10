@@ -20,26 +20,26 @@
     <link rel="stylesheet" href="../static/styles/styles.css">
 </head>
 
-<body>
-    <h1>Pokemon Data</h1>
-    <table>
+<body class="bg-dark-purple">
+    <h1 class="text-white">Pokemon Data</h1>
+    <table class="table table-dark">
         <thead>
             <tr>
-                <th>National Pokedex #</th>
-                <th>Pokemon</th>
-                <th>Typing</th>
-                <th>Abilities</th>
-                <th>Base Stat Total (BST)</th>
+                <th class="text-white">National Pokedex #</th>
+                <th class="text-white">Pokemon</th>
+                <th class="text-white">Typing</th>
+                <th class="text-white">Abilities</th>
+                <th class="text-white">Base Stat Total (BST)</th>
             </tr>
         </thead>
         <tbody>
             {% for pokemon in pokemon %}
             <tr>
-                <td>{{ pokemon[0] }}</td>
-                <td>{{ pokemon[1] }}</td>
-                <td>{{ pokemon[2] }}</td>
-                <td>{{ pokemon[3] }}</td>
-                <td>{{ pokemon[4] }}</td>
+                <td class="text-white">{{ pokemon[0] }}</td>
+                <td class="text-white">{{ pokemon[1] }}</td>
+                <td class="text-white">{{ pokemon[2] }}</td>
+                <td class="text-white">{{ pokemon[3] }}</td>
+                <td class="text-white">{{ pokemon[4] }}</td>
             </tr>
             {% endfor %}
         </tbody>

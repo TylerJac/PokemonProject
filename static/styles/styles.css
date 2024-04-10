@@ -1,14 +1,15 @@
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 20px;
 }
 th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
     padding: 8px;
-    text-align: center;
+    text-align: left;
+    border-bottom: 1px solid #d82626;
 }
 th {
+<<<<<<< HEAD
     background-color: #f2f2f2;
 }
 body {
@@ -47,4 +48,73 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #45a049;
+=======
+    background-color: #0b054e;
+}
+
+/* Custom styling for fire type Pokémon */
+.fire {
+    background-color: #FDDFDF; /* Light Red */
+    color: #FF5733; /* Reddish Orange */
+}
+.water {
+    background-color: #C9E4FF; /* Light Blue */
+    color: #007BFF; /* Blue */
+}
+.grass {
+    background-color: #D4F0C6; /* Light Green */
+    color: #28A745; /* Green */
+}
+.bug {
+    background-color: #FFEE93; /* Light Yellow */
+    color: #B08B2E; /* Dark Yellow */
+}
+.normal {
+    background-color: #F4F4F4; /* Light Grey */
+    color: #6C757D; /* Dark Grey */
+}
+.poison {
+    background-color: #E6E6FA; /* Lavender */
+    color: #800080; /* Purple */
+}
+.electric {
+    background-color: #FFF8C6; /* Light Yellow */
+    color: #FFD700; /* Gold */
+}
+.ground {
+    background-color: #F4E7DA; /* Light Brown */
+    color: #A52A2A; /* Brown */
+}
+.fairy {
+    background-color: #F9EBFF; /* Light Purple */
+    color: #A74AC7; /* Purple */
+}
+.psychic {
+    background-color: #FFD6A5; /* Light Orange */
+    color: #FFA600; /* Orange */
+}
+.fighting {
+    background-color: #FFFAF0; /* Ivory */
+    color: #8B4513; /* Saddle Brown */
+}
+.rock {
+    background-color: #F2F2F2; /* Light Gray */
+    color: #A9A9A9; /* Dark Gray */
+}
+.ice {
+    background-color: #E0F7FA; /* Light Cyan */
+    color: #00BFFF; /* Deep Sky Blue */
+}
+.ghost {
+    background-color: #D3D3D3; /* Light Grey */
+    color: #4B0082; /* Indigo */
+}
+.flying {
+    background-color: #F3E5F5; /* Light Purple */
+    color: #8E24AA; /* Purple */
+}
+.dragon {
+    background-color: #F2A7BB; /* Light Pink */
+    color: #9B539C; /* Purple */
+>>>>>>> 99e1d923876da12a0f562f5c3977138b97e978bd
 }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Query</h2>
+        <form action="/results" method="post">
+            <label for="NationalPokedexNum">National Pokedex Number:</label>
+            <input type="text" id="NationalPokedexNum" name="NationalPokedexNum" placeholder="Enter National Pokedex #:" value="">
+
+            <label for="Pokemon">Pokemon Name:</label>
+            <input type="text" id="Pokemon" name="Pokemon" placeholder="Enter Pokemon name:" value="">
+
+            <label for="Typing">Typing</label>
+            <input type="text" id="Typing" name="Typing" placeholder="Enter Pokemon Typing:" value="">
+
+            <label for="Abilities">Pokemon Abilities:</label>
+            <input type="text" id="Abilities" name="Abilities" placeholder="Enter Pokemon Abilities (i.e. (abil1/abil2)):" value="">
+
+            <label for="BaseStatTotal">Pokemon Base Stat Total:</label>
+            <input type="text" id="BaseStatTotal" name="Base Stat Total" placeholder="Enter Pokemon Base Stat Total:" value="">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>

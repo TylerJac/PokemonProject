@@ -20,6 +20,8 @@ def home():
     cur.close()
     return render_template('index.html', pokemon=pokemon)
 
+
+# typings list
 @app.route('/typings_list')
 def typings_list():
     cur = mysql.connection.cursor()
@@ -27,6 +29,28 @@ def typings_list():
     typings = cur.fetchall()
     cur.close()
     return render_template('typings_list.html', typings=typings)
+
+# query DB
+@app.route('/query')
+def query():
+    return render_template("query.html")
+
+@app.route('/results', methods= ['GET', 'POST'], )
+def results():
+     
+
+    if request.method == 'POST':
+        cur = mysql.connection.cursor()
+
+        results = cur.execute(f"SELECT * FROM Pokemon WHERE NationalPokedexNum = '{request.form.get("NationalPokedexNum")}'")
+        results = cur.fetchall()
+        cur.close()
+        print("------------------------------------START DEBUG INFO------------------------------------")
+        print("QUERY RESULTS >> " + str(results))
+        print("------------------------------------END DEBUG INFO------------------------------------")
+        return render_template('successful_query.html', results = results)
+    else:
+       return render_template('unsuccessful_query.html', results = request.form)
 
 if __name__ == '__main__':
     app.run(debug=True)

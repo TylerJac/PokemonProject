@@ -9,7 +9,7 @@
 </head>
 
 <body>
-   <h1>Typing Data</h1>
+   <h1>Results</h1>
    <table>
       <thead>
          <tr>
@@ -32,7 +32,23 @@
          {% endfor %}
       </tbody>
    </table>
-   <button class="btn">View Typing Data</button>
+   <a href="/">Home</a>
+   <form action="/typing_matchup" method="post">
+      <h4>Enter below to view typing matchup data: </h4>
+      <label for="NationalPokedexNum">National Pokedex Number:</label>
+      <input type="text" id="NationalPokedexNum" name="NationalPokedexNum" placeholder="Enter National Pokedex #:"
+         value="">
+
+      <input type="submit" value="View Matchup Info">
+   </form>
+   <form action="/ability_info" method="post">
+      <h4>Enter below to view ability info: </h4>
+      <label for="NationalPokedexNum">National Pokedex Number:</label>
+      <input type="text" id="NationalPokedexNum" name="NationalPokedexNum" placeholder="Enter National Pokedex #:"
+         value="">
+
+      <input type="submit" value="View Ability Info">
+   </form>
    <!-- implement results for a query that displays weaknesses, super effectives, and invulnerabilities -->
 </body>
 

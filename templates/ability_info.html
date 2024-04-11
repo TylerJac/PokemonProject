@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokémon Database</title>
+    <title>Ability Info</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
@@ -18,34 +18,27 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shCk5KVw2HCE1s3emp0VHByiN8o2f2IfoP+xr"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../static/styles/styles.css">
-
 </head>
 
-<body>
-    <div class="container">
-        <h1>Typing Data</h1>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th class="text-white">Type 1</th>
-                    <th class="text-white">Weaknesses</th>
-                    <th class="text-white">Super Effective</th>
-                    <th class="text-white">Invulnerable</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for typing in typings %}
-                <tr>
-                    <td class="text-white">{{ typing[1] }}</td>
-                    <td class="text-white">{{ typing[2] }}</td>
-                    <td class="text-white">{{ typing[3] }}</td>
-                    <td class="text-white">{{ typing[4] }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-        <a class="btn btn-primary" href="/">Home</a>
-    </div>
+<body class="bg-dark-purple">
+    <h1 class="text-white">Pokemon Data</h1>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th class="text-white">Ability</th>
+                <th class="text-white">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for ability in ability_info %}
+            <tr>
+                <td class="text-white">{{ ability[1] }}</td>
+                <td class="text-white">{{ ability[2] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a class="btn btn-primary" href="/">Home</a>
 </body>
 
 </html>

@@ -1,23 +1,30 @@
 table {
     width: 100%;
-    border-collapse: collapse;
     margin-bottom: 20px;
 }
 th, td {
     padding: 8px;
     text-align: left;
-    border-bottom: 1px solid #d82626;
-}
-th {
-<<<<<<< HEAD
-    background-color: #f2f2f2;
+    border-bottom: 1px solid #3f1250;
+    border-left: 1px solid #3f1250;
+    border-right: 1px solid #3f1250;
+    border-top: 1px solid #3f1250;
+    border-width: 3px;
+    background-color: #6C757D;
 }
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color:#6C757D;
 }
 
+button {
+    background-color:#5b54a8;
+    border-radius: 5px;
+    height: 45px;
+    width: 180px;
+}
 .container {
     width: 80%;
     margin: auto;
@@ -35,6 +42,8 @@ input[type="text"] {
     margin-top: 4px;
     margin-bottom: 20px;
     box-sizing: border-box;
+    background-color: #bcc7d1;
+    border: 2px solid #0b054e;
 }
 
 input[type="submit"] {
@@ -48,7 +57,6 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #45a049;
-=======
     background-color: #0b054e;
 }
 
@@ -116,5 +124,4 @@ input[type="submit"]:hover {
 .dragon {
     background-color: #F2A7BB; /* Light Pink */
     color: #9B539C; /* Purple */
->>>>>>> 99e1d923876da12a0f562f5c3977138b97e978bd
 }

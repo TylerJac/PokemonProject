@@ -9,32 +9,31 @@
 </head>
 
 <body>
-
-   <body>
-      <h1>Typing Data</h1>
-      <table>
-         <thead>
-            <tr>
-               <th>National Pokedex Number</th>
-               <th>Pokemon</th>
-               <th>Typing</th>
-               <th>Abilities</th>
-               <th>BaseStatTotal</th>
-            </tr>
-         </thead>
-         <tbody>
-            {% for result in results %}
-            <tr>
-               <td>{{ result[0] }}</td>
-               <td>{{ result[1]  }}</td>
-               <td>{{ result[2] }}</td>
-               <td>{{ result[3] }}</td>
-               <td>{{ result[4] }}</td>
-            </tr>
-            {% endfor %}
-         </tbody>
-      </table>
-   </body>
+   <h1>Typing Data</h1>
+   <table>
+      <thead>
+         <tr>
+            <th>National Pokedex Number</th>
+            <th>Pokemon</th>
+            <th>Typing</th>
+            <th>Abilities</th>
+            <th>BaseStatTotal</th>
+         </tr>
+      </thead>
+      <tbody>
+         {% for result in results %}
+         <tr>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[1] }}</td>
+            <td>{{ result[2] }}</td>
+            <td>{{ result[3] }}</td>
+            <td>{{ result[4] }}</td>
+         </tr>
+         {% endfor %}
+      </tbody>
+   </table>
+   <button class="btn">View Typing Data</button>
+   <!-- implement results for a query that displays weaknesses, super effectives, and invulnerabilities -->
 </body>
 
 </html>

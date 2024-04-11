@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Pokémon Database</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -17,13 +19,32 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../static/styles/styles.css">
 </head>
-<body>
-    <h1>Pokemon Database</h1>
-    <h3>View all pokemon</h3>
-    <a href="/pokemon_list">View</a>
-    <h3>View all Typings</h3>
-    <a href="/typings_list">View</a>
-    <h3>View all Abilities</h3>
-    <a href="/abilities_list">View</a>
+
+<body class="bg-dark-purple">
+    <h1 class="text-white">Pokemon Data</h1>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th class="text-white">National Pokedex #</th>
+                <th class="text-white">Pokemon</th>
+                <th class="text-white">Typing</th>
+                <th class="text-white">Abilities</th>
+                <th class="text-white">Base Stat Total (BST)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for pokemon in pokemon %}
+            <tr>
+                <td class="text-white">{{ pokemon[0] }}</td>
+                <td class="text-white">{{ pokemon[1] }}</td>
+                <td class="text-white">{{ pokemon[2] }}</td>
+                <td class="text-white">{{ pokemon[3] }}</td>
+                <td class="text-white">{{ pokemon[4] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a class="btn btn-primary" href="/">Home</a>
 </body>
+
 </html>
